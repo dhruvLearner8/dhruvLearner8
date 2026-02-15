@@ -83,16 +83,17 @@
 <tr>
 <td width="50%" valign="top">
 
-#### [Personal AI Agent for Gmail & Calendar](https://github.com/dhruvLearner8/Personal-AI-Agent-for-GMail-and-Calendar-Assistant)
-A full-stack agentic AI assistant that manages Gmail and Google Calendar through natural language. The LLM autonomously decides which tools to call, chains them across multiple iterations, and returns structured results.
+#### [Arc Reactor — Multi-Tool AI Agent with MCP & Telegram](https://github.com/dhruvLearner8/nexus-agent)
+A reasoning-driven AI agent that receives queries via Telegram, autonomously orchestrates multiple MCP tool servers (web search, RAG, math, code execution), and returns answers — all through an LLM-powered Perception → Memory → Decision → Action loop.
 
-`Gemini 2.0 Flash` `MCP` `FastAPI` `React` `Gmail API` `Calendar API` `OAuth 2.0`
+`MCP` `Gemini 2.0 Flash` `FAISS` `Ollama` `Telegram Bot` `stdio + SSE Transport`
 
 **What it does:**
-- Read, search, and send emails via chat
-- Summarize email threads and extract document attachments (PDF/DOCX)
-- View schedule, check free slots, create events with attendees
-- 10 MCP tools orchestrated by an agentic loop (up to 5 iterations)
+- Telegram bot as the agent's input interface — send a message, get an AI-powered answer
+- 30+ MCP tools across 3 servers (math/code, document RAG, web search via DuckDuckGo)
+- In-RAM semantic memory using FAISS + Ollama embeddings for multi-step reasoning
+- Supports both stdio and SSE (Server-Sent Events) MCP transport protocols
+- Configurable agent strategy, persona, and tool routing via YAML
 
 </td>
 <td width="50%" valign="top">
@@ -157,10 +158,16 @@ A video processing pipeline using Python multiprocessing with motion detection, 
 </td>
 <td width="50%" valign="top">
 
-#### What I'm Working On Next
-- Deeper RAG pipelines with re-ranking and hybrid search
-- Multi-agent systems with inter-agent communication
-- Production deployment patterns for LLM applications
+#### [Personal AI Agent for Gmail & Calendar](https://github.com/dhruvLearner8/Personal-AI-Agent-for-GMail-and-Calendar-Assistant)
+A full-stack agentic AI assistant that manages Gmail and Google Calendar through natural language. The LLM autonomously decides which tools to call, chains them across multiple iterations, and returns structured results.
+
+`Gemini 2.0 Flash` `MCP` `FastAPI` `React` `Gmail API` `Calendar API` `OAuth 2.0`
+
+**What it does:**
+- Read, search, and send emails via chat
+- Summarize email threads and extract document attachments (PDF/DOCX)
+- View schedule, check free slots, create events with attendees
+- 10 MCP tools orchestrated by an agentic loop (up to 5 iterations)
 
 </td>
 </tr>
