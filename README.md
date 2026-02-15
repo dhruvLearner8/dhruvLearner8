@@ -83,7 +83,7 @@
 <tr>
 <td width="50%" valign="top">
 
-#### [Arc Reactor — Multi-Tool AI Agent with MCP & Telegram](https://github.com/dhruvLearner8/nexus-agent)
+#### [Arc Reactor — Multi-Tool AI Agent with MCP & Telegram](https://github.com/dhruvLearner8/Arc-Reactor-Agent-for-Browser)
 A reasoning-driven AI agent that receives queries via Telegram, autonomously orchestrates multiple MCP tool servers (web search, RAG, math, code execution), and returns answers — all through an LLM-powered Perception → Memory → Decision → Action loop.
 
 `MCP` `Gemini 2.0 Flash` `FAISS` `Ollama` `Telegram Bot` `stdio + SSE Transport`
