@@ -128,16 +128,16 @@ A Deep Q-Network agent that learns to navigate a lunar rover across procedurally
 </td>
 <td width="50%" valign="top">
 
-#### [ATS Resume Analyzer Chrome Extension](https://github.com/dhruvLearner8/Resume-Analyzer-Chrome-Extension)
-A Chrome Extension that scans job postings from any site and analyzes your resume against the job description using Gemini. Returns an ATS score, strengths, weaknesses, missing keywords, and improvement suggestions.
+#### [Live Flight Price Prediction — ML + LangGraph Buy/Wait Agent](https://github.com/dhruvLearner8/Live-Flight-Price-prediction)
+An XGBoost pricing model trained on 82M+ real Expedia itineraries, wrapped in a LangGraph agent that weighs the model's historical price estimate against live SerpAPI quotes to give a real buy-or-wait recommendation.
 
-`Gemini REST API` `Chrome MV3` `Vanilla JS` `No dependencies`
+`XGBoost` `SHAP` `LangGraph` `Gemini` `FastAPI` `Streamlit` `SerpAPI` `Polars`
 
 **What it does:**
-- Upload PDF/TXT resume, scan any job posting page
-- Gemini analyzes resume vs. job description
-- Returns ATS score (0-100), strengths, gaps, and keyword suggestions
-- Zero build step — pure browser APIs + fetch
+- 10 EDA/SHAP-validated features (route, stops, basic economy, seasonality) driving a chronologically-split, leak-free price model
+- FastAPI `/predict` endpoint deployed on Render, backing a live Streamlit demo with real-time agent graph visualization
+- LangGraph ReAct agent decides when to call live-price and 7-day trend tools before recommending BOOK NOW or WAIT
+- Tested a live-price calibration approach against real SerpAPI data and documented why it was dropped in favor of showing both numbers honestly
 
 </td>
 </tr>
