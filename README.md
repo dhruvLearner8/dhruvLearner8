@@ -114,16 +114,16 @@ A Chrome extension that indexes any webpage you visit into a local FAISS vector 
 <tr>
 <td width="50%" valign="top">
 
-#### [MCP Server for Excalidraw & Gmail](https://github.com/dhruvLearner8/Making-MCP-Server-for-Excalidraw-and-Gmail)
-An MCP server exposing 20+ tools for math, Excalidraw drawing, and Gmail. A Gemini-powered agent reasons through complex problems step-by-step, calling tools iteratively until it reaches a final answer.
+#### [LunarAgent — DQN for Procedural Crater-Field Navigation](https://github.com/dhruvLearner8/LunarAgent-using-DQN)
+A Deep Q-Network agent that learns to navigate a lunar rover across procedurally generated crater fields from raw terrain patches, with a full debugging log of the reward-shaping, loss, and architecture bugs found and fixed along the way.
 
-`MCP` `Gemini 2.0 Flash` `Playwright` `Gmail API` `pywinauto`
+`PyTorch` `Deep Q-Learning` `Dueling DQN` `GroupNorm` `Huber Loss` `Apple MPS`
 
 **What it does:**
-- 20+ MCP tools (arithmetic, trig, string ops, drawing, email)
-- LLM-driven iterative tool calling loop
-- Browser automation to draw shapes on Excalidraw
-- Sends email summaries via Gmail API on completion
+- 4-layer conv + dueling value/advantage head (110K params, 21.6x smaller than baseline) reading local terrain patches
+- Potential-based reward shaping so distance-to-goal never makes early death the optimal policy
+- Randomized crater placement per episode to force generalization over route memorization
+- BFS-verified map solvability; MPS-accelerated training (~2.3x over CPU) with a 100K-transition replay buffer
 
 </td>
 <td width="50%" valign="top">
