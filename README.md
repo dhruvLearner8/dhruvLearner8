@@ -98,22 +98,6 @@ A reasoning-driven AI agent that receives queries via Telegram, autonomously orc
 </td>
 <td width="50%" valign="top">
 
-#### [RAG-Based Chrome Plugin](https://github.com/dhruvLearner8/RAG-Based-Chrome-Plugin)
-A Chrome extension that indexes any webpage you visit into a local FAISS vector database and lets you semantically search across all indexed pages. Click a result to open the page with matching text highlighted.
-
-`FAISS` `Ollama` `nomic-embed-text` `FastAPI` `Chrome Manifest V3`
-
-**What it does:**
-- One-click page indexing with text chunking (512 words, 40-word overlap)
-- Local embeddings via Ollama — no data leaves your machine
-- Semantic search with top-k retrieval
-- Auto-navigate and highlight matching paragraphs on the source page
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
 #### [LunarAgent — DQN for Procedural Crater-Field Navigation](https://github.com/dhruvLearner8/LunarAgent-using-DQN)
 A Deep Q-Network agent that learns to navigate a lunar rover across procedurally generated crater fields from raw terrain patches, with a full debugging log of the reward-shaping, loss, and architecture bugs found and fixed along the way.
 
@@ -124,6 +108,23 @@ A Deep Q-Network agent that learns to navigate a lunar rover across procedurally
 - Potential-based reward shaping so distance-to-goal never makes early death the optimal policy
 - Randomized crater placement per episode to force generalization over route memorization
 - BFS-verified map solvability; MPS-accelerated training (~2.3x over CPU) with a 100K-transition replay buffer
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+#### [Underwater World — OpenGL Underwater Exploration Game](https://github.com/dhruvLearner8/Underwater-world-OpenGL)
+A real-time 3D underwater environment built from scratch in C++ and legacy (fixed-function) OpenGL — heightmap terrain, boids-style fish flocking AI, physics-based collision/bounce, and a player autopilot steering system.
+
+`C++` `OpenGL` `GLUT` `Boids AI` `Collision Detection`
+
+**What it does:**
+- Custom heightmap terrain with bilinear height queries and per-triangle surface normals
+- Boids-style fish flocking (separation + seek steering) with a throttled nearest-neighbor search for performance
+- Physics model with gravity, drag, and elastic bounce off spheres, cylinders, and terrain
+- Autopilot state machine that steers the player toward a caught fish's school
+- Data-driven level format (`map.txt`) for terrain, obstacles, and fish schools — no recompiling to change the world
 
 </td>
 <td width="50%" valign="top">
@@ -144,6 +145,20 @@ An XGBoost pricing model trained on 82M+ real Expedia itineraries, wrapped in a 
 <tr>
 <td width="50%" valign="top">
 
+#### [RAG-Based Chrome Plugin](https://github.com/dhruvLearner8/RAG-Based-Chrome-Plugin)
+A Chrome extension that indexes any webpage you visit into a local FAISS vector database and lets you semantically search across all indexed pages. Click a result to open the page with matching text highlighted.
+
+`FAISS` `Ollama` `nomic-embed-text` `FastAPI` `Chrome Manifest V3`
+
+**What it does:**
+- One-click page indexing with text chunking (512 words, 40-word overlap)
+- Local embeddings via Ollama — no data leaves your machine
+- Semantic search with top-k retrieval
+- Auto-navigate and highlight matching paragraphs on the source page
+
+</td>
+<td width="50%" valign="top">
+
 #### [Viewport Calculator](https://github.com/dhruvLearner8/Viewport-Calculator-Home-Team-AI)
 A video processing pipeline using Python multiprocessing with motion detection, viewport tracking, and smoothing. Containerized with Docker and deployable to AWS EC2.
 
@@ -156,6 +171,8 @@ A video processing pipeline using Python multiprocessing with motion detection, 
 - Docker Compose for local/cloud deployment
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 #### [Personal AI Agent for Gmail & Calendar](https://github.com/dhruvLearner8/Personal-AI-Agent-for-GMail-and-Calendar-Assistant)
@@ -168,6 +185,9 @@ A full-stack agentic AI assistant that manages Gmail and Google Calendar through
 - Summarize email threads and extract document attachments (PDF/DOCX)
 - View schedule, check free slots, create events with attendees
 - 10 MCP tools orchestrated by an agentic loop (up to 5 iterations)
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
